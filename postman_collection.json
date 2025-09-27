@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "764fab31-9bac-4369-a4e7-f440c68b62bb",
+		"name": "Goodbooks  API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47059026",
+		"_collection_link": "https://gullzahra64-1216012.postman.co/workspace/bookStore~54ee0186-fd2f-4b71-9d36-5a5bccebacf2/collection/47059026-764fab31-9bac-4369-a4e7-f440c68b62bb?action=share&source=collection_link&creator=47059026"
+	},
+	"item": [
+		{
+			"name": "Health Check",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"status is 200\", () => pm.response.to.have.status(200));\r",
+							"pm.test(\"body.status == ok\", () => {\r",
+							"  const json = pm.response.json();\r",
+							"  pm.expect(json.status).to.eql(\"ok\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/healthz",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"healthz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List books",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get book by ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "post rating",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List tags",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Book tags",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Rating Summary",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "to read list",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

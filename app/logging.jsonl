@@ -1,0 +1,27 @@
+{"route": "/docs", "method": "GET", "params": {}, "status": 200, "latency_ms": 0, "client_ip": "172.18.0.1", "ts": 1758986020.1721203}
+{"route": "/openapi.json", "method": "GET", "params": {}, "status": 200, "latency_ms": 10, "client_ip": "172.18.0.1", "ts": 1758986020.996383}
+{"route": "/healthz", "method": "GET", "params": {}, "status": 200, "latency_ms": 11, "client_ip": "172.18.0.1", "ts": 1758986050.1445894}
+{"route": "/healthz", "method": "GET", "params": {}, "status": 200, "latency_ms": 3, "client_ip": "172.18.0.1", "ts": 1758987614.2998986}
+{"route": "/docs", "method": "GET", "params": {}, "status": 200, "latency_ms": 0, "client_ip": "172.18.0.1", "ts": 1758987789.190543}
+{"route": "/openapi.json", "method": "GET", "params": {}, "status": 200, "latency_ms": 0, "client_ip": "172.18.0.1", "ts": 1758987789.3400798}
+{"route": "/healthz", "method": "GET", "params": {}, "status": 200, "latency_ms": 4, "client_ip": "127.0.0.1", "ts": 1758988735.3283296}
+{"route": "/books", "method": "GET", "params": {"page": "1", "page_size": "5"}, "status": 200, "latency_ms": 5, "client_ip": "127.0.0.1", "ts": 1758988735.3398979}
+{"route": "/healthz", "method": "GET", "params": {}, "status": 200, "latency_ms": 6, "client_ip": "172.18.0.1", "ts": 1758989983.4833598}
+{"route": "/books", "method": "GET", "params": {"page": "1", "page_size": "10"}, "status": 200, "latency_ms": 7, "client_ip": "172.18.0.1", "ts": 1758990119.1565878}
+{"route": "/books", "method": "GET", "params": {"q": "orwell", "year_from": "1930", "year_to": "1950", "sort": "avg", "order": "desc", "page": "1", "page_size": "10\n"}, "status": 200, "latency_ms": 19, "client_ip": "172.18.0.1", "ts": 1758993110.6345134}
+{"route": "/healthz", "method": "GET", "params": {}, "status": 200, "latency_ms": 1, "client_ip": "172.18.0.1", "ts": 1758993117.2770154}
+{"route": "/books/170", "method": "GET", "params": {}, "status": 404, "latency_ms": 4, "client_ip": "172.18.0.1", "ts": 1758993149.101156}
+{"route": "/books/15", "method": "GET", "params": {}, "status": 200, "latency_ms": 2, "client_ip": "172.18.0.1", "ts": 1758993165.9819658}
+{"route": "/ratings", "method": "GET", "params": {}, "status": 405, "latency_ms": 0, "client_ip": "172.18.0.1", "ts": 1758993342.9866724}
+{"route": "/ratings", "method": "POST", "params": {}, "status": 200, "latency_ms": 14, "client_ip": "172.18.0.1", "ts": 1758993357.6758046}
+{"route": "/tags", "method": "GET", "params": {}, "status": 200, "latency_ms": 34, "client_ip": "172.18.0.1", "ts": 1758995480.363894}
+{"route": "/books/170/tags", "method": "GET", "params": {}, "status": 404, "latency_ms": 3, "client_ip": "172.18.0.1", "ts": 1758995523.9279594}
+{"route": "/books/17/tags", "method": "GET", "params": {}, "status": 200, "latency_ms": 5, "client_ip": "172.18.0.1", "ts": 1758963170.0719478}
+{"route": "/books/15/tags", "method": "GET", "params": {}, "status": 200, "latency_ms": 2, "client_ip": "172.18.0.1", "ts": 1758963172.8671937}
+{"route": "/books/15/tags", "method": "GET", "params": {}, "status": 200, "latency_ms": 2, "client_ip": "172.18.0.1", "ts": 1758995545.3170078}
+{"route": "/ratings/summary", "method": "GET", "params": {"book_id": "170\n"}, "status": 404, "latency_ms": 0, "client_ip": "172.18.0.1", "ts": 1758995597.4321246}
+{"route": "/ratings/summary", "method": "GET", "params": {"book_id": "15\n"}, "status": 404, "latency_ms": 0, "client_ip": "172.18.0.1", "ts": 1758995602.9007382}
+{"route": "/ratings/summary", "method": "GET", "params": {"book_id": "15\n"}, "status": 404, "latency_ms": 0, "client_ip": "172.18.0.1", "ts": 1758995606.147674}
+{"route": "/ratings/summary", "method": "GET", "params": {"book_id": "5\n"}, "status": 404, "latency_ms": 0, "client_ip": "172.18.0.1", "ts": 1758995629.3169112}
+{"route": "/ratings/summary", "method": "GET", "params": {"book_id": "1\n"}, "status": 404, "latency_ms": 0, "client_ip": "172.18.0.1", "ts": 1758995641.9848475}
+{"route": "/users/2001/to-read", "method": "GET", "params": {}, "status": 200, "latency_ms": 5, "client_ip": "172.18.0.1", "ts": 1758995673.4583445}
