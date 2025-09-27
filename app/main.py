@@ -1,4 +1,4 @@
-# app/main.py
+
 import os, time, json
 from fastapi import FastAPI, HTTPException, Request, Depends, Query, Path, status
 from pydantic import BaseModel, Field
@@ -16,7 +16,7 @@ db = client[DB_NAME]
 
 app = FastAPI(title="GoodBooks API (MongoDB)")
 
-# ---------- Models ----------
+
 class BookOut(BaseModel):
     book_id: Optional[int]
     goodreads_book_id: Optional[int]
@@ -39,13 +39,13 @@ class PagedResponse(BaseModel):
     page_size: int
     total: int
 
-# ---------- Auth ----------
+#  Auth 
 def require_key(request: Request):
     key = request.headers.get("x-api-key")
     if key != API_KEY:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="invalid api key")
 
-# ---------- Logging middleware ----------
+# Logging middleware
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
     t0 = time.time()
@@ -66,7 +66,7 @@ async def log_requests(request: Request, call_next):
         f.write(json.dumps(entry) + "\n")
     return resp
 
-# ---------- Utilities ----------
+#  Utilities 
 def paginate_cursor(cursor, page: int, page_size: int):
     skip = (page - 1) * page_size
     items = list(cursor.skip(skip).limit(page_size))
@@ -74,7 +74,7 @@ def paginate_cursor(cursor, page: int, page_size: int):
         d.pop("_id", None)
     return items
 
-# ---------- Routes ----------
+#  Routes 
 @app.get("/healthz")
 def healthz():
     try:
